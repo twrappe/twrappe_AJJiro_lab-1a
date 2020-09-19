@@ -1,5 +1,5 @@
 from sys import *
-
+#Working on Info,Average
 def teacher(lastname, f_in):
     for line in f_in.readlines():
           line = line.split(",")
