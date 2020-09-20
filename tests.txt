@@ -1,17 +1,111 @@
 // CSC 365
 // Lab 1-a test suite
+
 // TC-1
 // Tests Requirements R3, R4
 // short form command name, existing student
 // expected output: HAVIR,BOBBIE,2,108,HAMER,GAVIN
 S: HAVIR
+
 // TC-2
 // Tests Requirements R3, R4
 // short form command name, non-existing student
 // expected output: <empty line>
 S: NEMO
+
 // TC-3
-// Tests Requirments R3, R13
+// Tests Requirements R3, R13
 // quit command
 // expected output: program terminates
 Q
+
+
+// TC-4
+// Tests Requirements R10
+// Average command, grade 1
+// expected output: Enter a search command: A: 1
+//		    Grade level: 1
+//		    Average GPA: 2.995
+A: 1
+
+// TC-5
+// Tests Requirements R11
+// Info command, Grade and number of students
+// expected output: Grade 0:  0
+//		    Grade 1:  2
+//		    Grade 2:  13
+//		    Grade 3:  9
+//		    Grade 4:  15
+//		    Grade 5:  0
+//		    Grade 6:  21
+
+I:
+
+// TC-6
+// Tests Requirements R5
+// Student and Bus command, last name, first name, and bus route
+// expected output: COOKUS,XUAN,3,107,52,FAFARD,ROCIO		    
+S: COOKUS 52
+
+// TC-7
+// Tests Requirements R6
+// Teacher command, last name and first name of students assigned
+// expected output: LIBRANDI,TODD
+// HAVIR,BOBBIE
+// SARAO,DIEDRA
+// VANCOTT,MIKE
+// WICINSKY,TERESE
+// KOZOLA,BUSTER
+// MULLINGS,LEIGHANN
+// BUSSMANN,BILLY
+// BERBES,DICK
+// MULGREW,RANDELL
+// TOWLEY,LANE
+
+T: HAMER
+
+
+// TC-8
+// Test Requirements R7
+// Grade command, last name and first name of students assigned
+// expected output: 
+//SAELEE,DANILO
+//GARTH,JOHN
+G: 1
+
+// TC-9
+// Tests Requirements R9
+// Grade High command, last name, first name, Highest gpa in grade
+// expected output: GARTH,JOHN,0,3.14,FALKER,ADOLPH
+G: 1 H
+
+
+// TC-10
+// Tests Requirements R9
+// Grade low command, last name, first name, lowest gpa in grade
+// expected output: SAELEE,DANILO,54,2.85,FALKER,ADOLPH
+G: 1 L
+
+// TC-11
+// Test Requirements R8
+// Bus command, last name, first name, grade, classroom
+// expected output: SCHOENECKER,PHUONG,6,109
+// FINCHMAN,MATHILDA,6,111
+// BRODERSEN,HYE,3,110
+// HAVIR,BOBBIE,2,108
+// MASSART,ELDON,4,105
+// GARTH,JOHN,1,103
+// CREMEANS,RANDOLPH,6,109
+// KREESE,CARRIE,6,109
+B: 0
+
+// TC-12
+// Test Requirements E1
+// File not found
+// Expected output: File students.txt not found
+
+// TC-13
+// Test Requirements E1
+// Wrong format
+// Expected output: Wrong format for students.txt
+
