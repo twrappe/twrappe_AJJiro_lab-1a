@@ -14,11 +14,9 @@ S: HAVIR
 S: NEMO
 
 // TC-3
-// Tests Requirements R3, R13
-// quit command
-// expected output: program terminates
-Q
-
+// Test Requirements E1
+// Wrong format
+// Expected output: Wrong format for students.txt
 
 // TC-4
 // Tests Requirements R10
@@ -105,7 +103,8 @@ B: 0
 // Expected output: File students.txt not found
 
 // TC-13
-// Test Requirements E1
-// Wrong format
-// Expected output: Wrong format for students.txt
+// Tests Requirements R3, R13
+// quit command
+// expected output: program terminates
+Q
 
